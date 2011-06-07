@@ -5,8 +5,8 @@ Options
 
     field:          item[tags][],
     availableTags:  [],
-    currentTags:    [],
-    acceptSpace:    false
+    setTags:        [],
+    allowSpaces:    false
 
 Usage
 -----
@@ -14,10 +14,10 @@ Usage
 ### Javascript
 
     jQuery('#tags').tagit({
-      field:"sample[tags][]",
+      fieldName:"uebbaa",
       availableTags:['github','sex','nice','hardcore','very nice'],
-      currentTags:['sex'],
-      acceptSpace:true
+      setTags:['sex','github'],
+      allowSpaces:true
     });
 
 ### Html
@@ -27,7 +27,6 @@ Usage
 -
 
 > Built with jQuery and jQueryUI.
->
-> By Levy Carneiro Jr.
->
+> Originally created by Levy Carneiro Jr.
+> Currently maintained by Alex Ehlke
 > Upgraded by Thiago Lagden
