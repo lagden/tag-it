@@ -3,10 +3,21 @@
 Options
 -------
 
-    field:          item[tags][],
-    availableTags:  [],
-    setTags:        [],
-    allowSpaces:    false
+    itemName              : 'item',
+    fieldName             : 'tags',
+    availableTags         : [],
+    setTags               : [],
+    onTagAdded            : null,
+    onTagRemoved          : null,
+    onTagClicked          : null,
+    tagSource             : null,
+    removeConfirmation    : false,
+    caseSensitive         : true,
+    allowSpaces           : false,
+    singleField           : false,
+    singleFieldDelimiter  : ',',
+    singleFieldNode       : null,
+    tabIndex              : null
 
 Usage
 -----
@@ -26,10 +37,7 @@ Usage
 
 -
 
-> Built with jQuery and jQueryUI.
-
-> Originally created by Levy Carneiro Jr.
-
-> Currently maintained by Alex Ehlke
-
-> Upgraded by Thiago Lagden
+Built with jQuery and jQueryUI.
+Originally created by Levy Carneiro Jr.
+Modified by Alex Ehlke.
+Upgraded by Thiago Lagden.
