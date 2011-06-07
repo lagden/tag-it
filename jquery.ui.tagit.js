@@ -13,7 +13,6 @@
   $.widget('ui.tagit',
   {
     options: {
-      'itemName'              : 'item',
       'fieldName'             : 'tags',
       'availableTags'         : [],
       'setTags'               : [],
@@ -320,7 +319,7 @@
       else
       {
         var escapedValue = label.html();
-        tag.append('<input type="hidden" style="display:none;" value="' + escapedValue + '" name="' + this.options.itemName + '[' + this.options.fieldName + '][]">');
+        tag.append('<input type="hidden" style="display:none;" value="' + escapedValue + '" name="' + this.options.fieldName + '[]">');
       }
       
       if (this.options.onTagAdded)

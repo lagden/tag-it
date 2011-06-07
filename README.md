@@ -3,7 +3,6 @@
 Options
 -------
 
-    itemName              : 'item',
     fieldName             : 'tags',
     availableTags         : [],
     setTags               : [],
