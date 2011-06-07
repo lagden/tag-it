@@ -1,4 +1,4 @@
-# TagIt
+# Tag-It
 
 Options
 -------
@@ -27,5 +27,7 @@ Usage
 -
 
 > Built with jQuery and jQueryUI.
+>
 > By Levy Carneiro Jr.
+>
 > Upgraded by Thiago Lagden
