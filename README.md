@@ -35,9 +35,9 @@ Usage
 
     <ul id="tags"></ul>
 
--
-
-Built with jQuery and jQueryUI.
-Originally created by Levy Carneiro Jr.
-Modified by Alex Ehlke.
-Upgraded by Thiago Lagden.
+Developers
+----------
+* Built with jQuery and jQueryUI
+* Originally created by Levy Carneiro Jr
+* Modified by Alex Ehlke
+* Upgraded by Thiago Lagden
