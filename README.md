@@ -27,6 +27,7 @@ Usage
 -
 
 > Built with jQuery and jQueryUI.
+
 > Originally created by Levy Carneiro Jr.
 > Currently maintained by Alex Ehlke
 > Upgraded by Thiago Lagden
