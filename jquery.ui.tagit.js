@@ -83,10 +83,7 @@
       });
       
       // Add set tags.
-      $.each(this.options.setTags, function(index, tag)
-      {
-        self.createTag(tag);
-      });
+      self.addTags(this.options.setTags);
       
       if (this.options.singleField)
       {
@@ -284,6 +281,15 @@
         return str;
       }
       return $.trim(str.toLowerCase());
+    },
+    
+    addTags: function(obj)
+    {
+      var self = this;
+      $.each(obj, function(index, tag)
+      {
+        self.createTag(tag);
+      });
     },
     
     createTag: function(value, additionalClass)
