@@ -101,7 +101,7 @@
         else
         {
           // Create our single field input after our list.
-          this.options.singleFieldNode = this.tagList.after('<input type="hidden" style="display:none;" value="" name="' + this.options.fieldName + '">');
+          this.options.singleFieldNode = this.tagList.after('<input type="hidden" value="" name="' + this.options.fieldName + '">');
         }
       }
       
@@ -325,7 +325,7 @@
       else
       {
         var escapedValue = label.html();
-        tag.append('<input type="hidden" style="display:none;" value="' + escapedValue + '" name="' + this.options.fieldName + '[]">');
+        tag.append('<input type="hidden" value="' + escapedValue + '" name="' + this.options.fieldName + '[]">');
       }
       
       if (this.options.onTagAdded)
