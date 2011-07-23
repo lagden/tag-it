@@ -34,10 +34,16 @@
       allowSpaces:true
     });
     
-    $("input.clearTags").click(function()
-    {
-      $('#mytags2').tagit('removeAll');
+    $("#mytags3").tagit({
+      fieldName:"ulala",
+      availableTags:['github','sex','nice','hardcore'],
+      setTags:['sex','github'],
+      onlyAvailableTags:true,
+      allowSpaces:false
     });
+    
+    $("input.clearTags").click(function(){$('#mytags2').tagit('removeAll');});
+    $("input.clearTags2").click(function(){$('#mytags3').tagit('removeAll');});
     
   });
   </script>
@@ -57,6 +63,11 @@
       <label for="tags">Tags 2</label>
       <ul id="mytags2"></ul>
       <input type="button" value="Clear Tags" class="clearTags">
+    </div>
+    <div class="line">
+      <label for="tags">Tags 3 (Only available tags) Try: github, sex, nice, hardcore</label>
+      <ul id="mytags3"></ul>
+      <input type="button" value="Clear Tags" class="clearTags2">
     </div>
     <div class="line">
       <p>Built with <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://jqueryui.com/" target="_blank">jQueryUI</a>.</p>

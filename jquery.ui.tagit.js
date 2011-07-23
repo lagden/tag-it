@@ -16,6 +16,7 @@
       'fieldName'             : 'tags',
       'availableTags'         : [],
       'setTags'               : [],
+      'onlyAvailableTags'     : false,
       'onTagAdded'            : null,
       'onTagRemoved'          : null,
       'onTagClicked'          : null,
@@ -300,7 +301,14 @@
       // Cleaning the input.
       this._tagInput.val('');
       
-      if (!this._isNew(value) || value === '')
+      // Only Available Tags
+      var isAvailable = 0;
+      if(this.options.onlyAvailableTags)
+      {
+        isAvailable = $.inArray(value, this.options.availableTags);
+      }
+      
+      if (!this._isNew(value) || value === '' || isAvailable < 0)
       {
         return false;
       }
