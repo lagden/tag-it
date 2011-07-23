@@ -6,6 +6,7 @@ Options
     fieldName             : 'tags',
     availableTags         : [],
     setTags               : [],
+    onlyAvailableTags     : false,
     onTagAdded            : null,
     onTagRemoved          : null,
     onTagClicked          : null,
